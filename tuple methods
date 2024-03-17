@@ -1,0 +1,55 @@
+#tuples
+tup =(1,2,3,4,'green',True,9.00)
+print(type(tup))
+print(tup[0])
+print(tup[3])
+print(tup[:])
+print(tup[-2])
+print(tup[::-1])
+print(tup[:-4])
+print(tup[0:7:2])
+print(tup[3:-2])
+#if condition in tuple
+if 'green' in tup:
+  print("yes")
+  if 'ee' in 'green':
+    print("yes is in")
+  else:
+    print("no is not")
+else:
+  print("no")  
+# methods of tuples 
+#tuples is not changable so first replace tuple to list and do changes after to replace list to tuple. 
+countries=('spain','itly','bharat','england','germany')
+temp = list(countries)
+temp.append("russia")
+temp.pop(3)
+temp[2]= "finland"
+countries = tuple(temp)
+print(countries)
+
+#joint two tuples
+nationality=('pakistan','afghanistan','taliban')
+nationality2=('vietnam','brazil','china')
+asia=nationality+nationality2
+print(asia)
+
+#count function
+tuple1=(0,1,2,3,4,5,6,7,3,8,9,10)
+result = tuple1.count(3)
+print(result)
+
+#index function
+tuple1=(0,1,2,3,4,5,6,7,3,8,9,10)
+result = tuple1.index(10)
+print(result)
+
+tuple1=(0,1,2,3,4,5,6,7,3,8,9,10)
+result = tuple1.index(6,3,10)
+print(result)
+
+result=len(tuple1)
+print(result)
+
+
+
